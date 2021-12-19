@@ -6,6 +6,5 @@ def writer(l):
             print(item + ',', end = " ")
 
 
-
 l = list(input().split())
 writer(l)
