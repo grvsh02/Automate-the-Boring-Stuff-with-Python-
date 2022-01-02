@@ -1,5 +1,3 @@
-from os import WCOREDUMP
-
 
 fileObj = open(
     '/home/gaurav02/Desktop/Automate-the-Boring-Stuff-with-Python-/Chapter-9/test.txt'
@@ -9,7 +7,7 @@ fileObj.close()
 
 l = list(contents.split(" "))
 print(l)
-for i,word in enumerate(l):
+for i, word in enumerate(l):
     if word == "ADJECTIVE":
         adj = input("Enter an adjective: ")
         l[i] = adj
@@ -29,7 +27,7 @@ for i in l:
     s = s + i + " "
 
 fileObj = open(
-    '/home/gaurav02/Desktop/Automate-the-Boring-Stuff-with-Python-/Chapter-9/test_update.txt',"w"
+    '/home/gaurav02/Desktop/Automate-the-Boring-Stuff-with-Python-/Chapter-9/test_update.txt', "w"
 )
 
 fileObj.write(s)
