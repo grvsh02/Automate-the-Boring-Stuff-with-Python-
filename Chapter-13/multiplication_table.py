@@ -17,5 +17,5 @@ for i in range(1,n+1):
 for i in range(1,n+1):
     for j in range(1,n+1):
         sheet[f"{chr(ord(a)+i)}{j+1}"] = i*j
-
+print(sheet[3][4].value)
 wb.save("Chapter-13/table.xlsx")
